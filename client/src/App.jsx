@@ -1,6 +1,10 @@
-
+import Layout from './Layout.jsx'
 function App() {
-  return <h1>App</h1>
+  return (
+    <>
+      <Layout/>
+    </>
+  )
 }
 
 export default App
