@@ -17,15 +17,16 @@ body {
 
 .header{
     position: fixed;
-    background-color: white;
+    background-color: rgb(83, 117, 64);
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     display: inline-flex;
+    align-items: center;
 }
 
 .header_logo{
     width: auto;
-    height: 100%;
+    height: 80%;
     aspect-ratio: 1;
 }
 
@@ -36,11 +37,40 @@ body {
 .header_title{
     font-family: Mad Mecha;
     font-size: 4rem;
-    color: rgb(170, 225, 128);
+    color: rgb(184, 211, 126);
+    margin-top: 2rem;
 }
 
 .header_subtitle{
     font-family: Mad Mecha;
     font-size: 1.5rem;
-    color: rgb(117, 160, 84);
+    color: rgb(183, 212, 160);
+    margin-top: -1.5rem;
+}
+
+.header_buttons{    
+    display: inline-flex;
+    position: absolute;
+    right: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.header_button{
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #cfeba4;
+    font-weight: bold;
+    color: #334518;
+}
+
+.popup{
+    position: fixed;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
 }
