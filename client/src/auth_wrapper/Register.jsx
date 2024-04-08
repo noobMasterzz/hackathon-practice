@@ -19,8 +19,8 @@ function Register() {
     }
     return (
         <>
-            <div onSubmit={handleSubmit} className="popup">
-                <form action="submit" className="form">
+            <div onSubmit={handleSubmit}>
+                <form>
                     <h1>Register</h1>
                     <label htmlFor="firstname"></label>
                     <input value={firstname} onChange={(e) => setFirstname(e.target.value)} id="firstname" type="text" />

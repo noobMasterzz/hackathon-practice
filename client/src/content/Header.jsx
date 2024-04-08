@@ -1,10 +1,14 @@
 import Logo from '../images/hiking logo.png'
 import React, { useState } from 'react'
-import Login from './Login'
-import Register from './Register'
+import Login from '../auth_wrapper/Login'
+import Register from '../auth_wrapper/Register'
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import AuthContext from './Provider'
 
 function Header() {
     const [popup, setPopup] = useState(null)
+    const { isAuthenticated } = useContext(AuthContext)
     
     const handleClickLog = () => {
 
@@ -37,10 +41,10 @@ function Header() {
                     <h1 className="header_title">Hike4Nature</h1>
                     <h3 className="header_subtitle">Explore. Preserve. Thrive.</h3>
                 </div>
-                <div className="header_buttons">
-                    <button className="header_button" onClick={handleClickReg} >Sign Up</button>
-                    <button className="header_button" onClick={handleClickLog} >Log In</button>
-                </div>  
+               {!isAuthenticated &&  <div className="header_buttons">
+                    <Link to="/register" className="header_button">Sign Up</Link>
+                    <Link to='/login' className="header_button">Log In</Link>
+                </div>  }
             </div>
             {popup === 'Login' && <Login onClose={handleCloseClick} />}
             {popup === 'Register' && <Register onClose={handleCloseClick} />}
