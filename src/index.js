@@ -19,12 +19,18 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "../client/dist")))
 
+//authenticate user when page loads
+//YESSS MAK ATONG PROBLEM NA SOLVE NA HEHEEH
+app.get("/api/authenticate-user", (req, res) => {
+    res.status(200).json({isUserAuthenticated: true})
+})
 
 //auth user
 //register
 app.use('/api/register', registerRoute)
 app.use('/api/login', loginRoute)
 app.use('/api/place', placeRoute)
+
 
 
 app.all("*", (_, res) => {

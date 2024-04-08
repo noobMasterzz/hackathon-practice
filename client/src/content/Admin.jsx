@@ -1,8 +1,8 @@
 
 const Admin = () => {
   return (
-    <section className="text-black">
-      HERES ADMIN PAGE HEEH
+    <section className="text-black h-full z-[999]">
+      THIS IS THE ADMIN PAGE HEHEHEHEH
     </section>
   )
 }
