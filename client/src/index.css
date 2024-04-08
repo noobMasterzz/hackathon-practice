@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "Mad Mecha";
+    src: url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.eot");
+    src: url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b2391e8f9d46fa4d0182f994b92edea0.svg#Mad Mecha")format("svg");
+}
+
+body {
+  background: #ecfff3;
+}
+
+.header{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    display: inline-flex;
+}
+
+.header_logo{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.header_titles{
+    display: block;
+}
+
+.header_title{
+    font-family: Mad Mecha;
+    font-size: 4rem;
+    color: rgb(170, 225, 128);
+}
+
+.header_subtitle{
+    font-family: Mad Mecha;
+    font-size: 1.5rem;
+    color: rgb(117, 160, 84);
+}
