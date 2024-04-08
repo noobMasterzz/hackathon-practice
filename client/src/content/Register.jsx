@@ -20,18 +20,19 @@ function Register() {
     return (
         <>
             <div className="popup">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-1 bg-slate-50 rounded p-5">
+                <form action="submit" className="form">
                     <h1>Register</h1>
                     <label htmlFor="firstname"></label>
-                    <input value={firstname} onChange={(e) => setFirstname(e.target.value)}  id="firstname" type="text" />
+                    <input id="firstname" type="text" />
                     <label htmlFor="lastname"></label>
-                    <input value={lastname} onChange={(e) => setLastname(e.target.value)} id="lastname" type="text" />
+                    <input id="lastname" type="text" />
                     <label htmlFor="firstname"></label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)} id="email" type="text" />
+                    <input id="email" type="text" />
                     <label htmlFor="firstname"></label>
-                    <input value={password} onChange={(e) => setPassword(e.target.value)}  id="password" type="password" />
-                    <button>Submit</button>
-                    {/*<p>Don't have an account? <Link to="/signup">Sign Up</Link></p>*/}
+                    <input id="password" type="password" />
+                    <label htmlFor="firstname"></label>
+                    <input type="submit" value="Login" />
+                    <p>Don't have an account?</p>
                 </form>
             </div>
         </>
