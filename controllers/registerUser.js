@@ -11,7 +11,7 @@ const register = async (req, res) => {
     })
     console.log(createdUser)
     
-    return res.status(201).json({message: `${firstname} has been created!`})
+    return res.status(201).json({success: true, message: `${firstname} has been created!`})
 }
 
 module.exports = register
