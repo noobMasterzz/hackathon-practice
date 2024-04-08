@@ -69,8 +69,23 @@ body {
 
 .popup{
     position: fixed;
-    margin: auto;
     width: fit-content;
     height: fit-content;
     padding: 2rem;
+    display: flex;
+    margin: auto;
+}
+
+.form{
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.6);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+input, label{
+    margin-block: 1rem;
+    width: 80%;
 }

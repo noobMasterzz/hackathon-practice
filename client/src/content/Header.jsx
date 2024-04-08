@@ -7,7 +7,7 @@ function Header() {
     const [popup, setPopup] = useState(null)
     
     const handleClickLog = () => {
-        if (popup === "Login") {
+        if (popup === 'Login') {
             setPopup(null)
         }
         else {
@@ -16,7 +16,7 @@ function Header() {
     }
 
     const handleClickReg = () => {
-        if (popup === "Register") {
+        if (popup === 'Register') {
             setPopup(null)
         }
         else {
@@ -48,4 +48,3 @@ function Header() {
   }
   
   export default Header
-  

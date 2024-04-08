@@ -2,7 +2,7 @@ function Register() {
     return (
         <>
             <div className="popup">
-                <form action="submit">
+                <form action="submit" className="form">
                     <h1>Register</h1>
                     <label htmlFor="firstname"></label>
                     <input id="firstname" type="text" />
@@ -14,7 +14,7 @@ function Register() {
                     <input id="password" type="password" />
                     <label htmlFor="firstname"></label>
                     <input type="submit" value="Login" />
-                    <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+                    <p>Don't have an account?</p>
                 </form>
             </div>
         </>
