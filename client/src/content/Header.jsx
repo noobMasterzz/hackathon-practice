@@ -7,6 +7,7 @@ function Header() {
     const [popup, setPopup] = useState(null)
     
     const handleClickLog = () => {
+
         if (popup === 'Login') {
             setPopup(null)
         }

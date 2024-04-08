@@ -1,4 +1,22 @@
+import { useState } from 'react'
+import axios from 'axios'
+
 function Register() {
+    const [firstname, setFirstname] = useState("")
+    const [lastname, setLastname] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+       try{
+            const response = await axios.post('/api/register', {firstname, lastname, email, password})
+            console.log(response)
+       }catch(e){
+            console.log(e)
+       }
+        
+    }
     return (
         <>
             <div className="popup">
